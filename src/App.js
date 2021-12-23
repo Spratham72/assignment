@@ -4,20 +4,19 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Mobile Operating System</h1>
+      <ul>
+        <li>Android</li>
+        <li>Blackberry</li>
+        <li>iPhone</li>
+        <li>Windows Phone</li>
+      </ul>
+      <h1>Mobile Manufacterers</h1>
+      <ul>
+      {["Samsung","HTC","Micromax","Apple"].map(el=>
+         <li>{el}</li>
+      )}
+      </ul>
     </div>
   );
 }
